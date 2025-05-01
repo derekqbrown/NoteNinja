@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="75.972221mm"
-   height="102.46656mm"
-   viewBox="0 0 75.972221 102.46656"
+   width="90.36869mm"
+   height="114.40122mm"
+   viewBox="0 0 90.36869 114.40122"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,14 +13,18 @@
      id="defs1" />
   <g
      id="layer1"
-     transform="translate(-30.606912,-64.970244)">
+     transform="translate(-33.357053,-78.544785)">
     <path
-       style="fill:none;stroke:#4d4d4d;stroke-width:12;stroke-linecap:round;stroke-linejoin:round"
-       d="m 54.024846,70.970245 46.554294,0.0911 V 161.43681 H 53.933742"
+       style="fill:none;stroke:#f3f3f3;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 61.535449,186.94601 H 117.29128 V 84.544785 H 62.264283"
        id="path1" />
     <path
-       style="fill:none;stroke:#4d4d4d;stroke-width:12;stroke-linecap:round;stroke-linejoin:round"
-       d="M 72.786888,114.41074 58.068139,129.12949 M 36.606914,114.41074 H 72.786888 L 57.974302,99.598154"
-       id="path2" />
+       style="fill:none;stroke:#f3f3f3;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 39.621055,135.79187 H 88.322924"
+       id="path3" />
+    <path
+       style="fill:none;stroke:#f3f3f3;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 64.659781,111.75639 23.869323,23.86932 -23.778223,24.50706"
+       id="path4" />
   </g>
 </svg>

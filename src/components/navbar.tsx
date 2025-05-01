@@ -1,18 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you are using React Router
+import { Link } from 'react-router-dom'; 
 import NinjaIcon from '../assets/ninjaicon.svg';
 import HomeIcon from '../assets/homeicon.svg';
 import NoteIcon from '../assets/notesicon.svg';
 import ProfileIcon from '../assets/profileicon.svg';
 import ChatIcon from '../assets/chaticon.svg';
+import LoginIcon from '../assets/loginicon.svg';
+import LogoutIcon from '../assets/logouticon.svg';
 
-function Navbar({ isLoggedIn, onAuthClick }) {
+function Navbar({ onAuthClick }) {
+  let isLoggedIn = (localStorage.getItem('token') != null);
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
          
         <Link to="/" className="flex h-10 px-2 items-center justify-between">
-          <img className="w-8" src={NinjaIcon} alt="logo"/>
+          <img className="w-8 mr-2" src={NinjaIcon} alt="logo"/>
           <span className="text-xl font-bold text-indigo-700 hidden sm:inline">NoteNinja</span>
         </Link>
         <div className="flex items-center justify-between space-x-4">
@@ -36,9 +39,13 @@ function Navbar({ isLoggedIn, onAuthClick }) {
           )}
           <button
             onClick={onAuthClick}
-            
-            className="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="bg-indigo-500 text-white px-4 p-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring-3 focus:ring-orange-600"
           >
+            <img
+              className="h-5 pr-2 mb-0.5 inline"
+              src={isLoggedIn ? LogoutIcon : LoginIcon}
+              alt={isLoggedIn ? 'Logout' : 'Login / Register'}
+            />
             {isLoggedIn ? 'Logout' : 'Login / Register'}
           </button>
         </div>
