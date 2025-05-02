@@ -11,16 +11,16 @@ import LogoutIcon from '../assets/logouticon.svg';
 function Navbar({ onAuthClick }) {
   let isLoggedIn = (localStorage.getItem('token') != null);
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md ">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
          
         <Link to="/" className="flex h-10 px-2 items-center justify-between">
           <img className="w-8 mr-2" src={NinjaIcon} alt="logo"/>
-          <span className="text-xl font-bold text-indigo-700 hidden sm:inline">NoteNinja</span>
+          <span className="text-xl font-bold text-indigo-700 hover:text-indigo-500 hidden sm:inline">NoteNinja</span>
         </Link>
         <div className="flex items-center justify-between space-x-4">
           <Link to="/" className="flex h-10 px-2 items-center justify-between">
-            <img className="w-6 h-5 pr-2" src={HomeIcon} alt="Home"/>
+            <img className="h-5 pr-2" src={HomeIcon} alt="Home"/>
             <span className="text-gray-700 hover:text-indigo-600 hidden sm:inline">Home</span>
           </Link>
           <Link to="/chat" className="flex h-10 px-2 items-center justify-between">
@@ -39,7 +39,7 @@ function Navbar({ onAuthClick }) {
           )}
           <button
             onClick={onAuthClick}
-            className="bg-indigo-500 text-white px-4 p-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring-3 focus:ring-orange-600"
+            className="bg-indigo-500 text-white px-4 p-2 rounded hover:bg-indigo-400 focus:outline-none focus:ring-3 focus:ring-orange-600"
           >
             <img
               className="h-5 pr-2 mb-0.5 inline"

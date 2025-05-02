@@ -7,6 +7,7 @@ import ChatPage from './pages/chat';
 import NotesPage from './pages/notes';
 import HomePage from './pages/home';
 import ProfilePage from './pages/profile';
+import Footer from './components/footer';
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
           onAuthSuccess={handleLoginRegisterSuccess}
         />
       )}
+    <Footer/>
     </div>
     
   );

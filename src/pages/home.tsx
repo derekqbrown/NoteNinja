@@ -1,36 +1,7 @@
 import FeatureCard from '../components/featurecard';
-import FlashCardDeck from '../components/flashcarddeck';
 
 function HomePage() {
-  const myQuestions = [
-    {
-      question: 'What is the capital of France?',
-      answers: [
-        { text: 'Paris', isCorrect: true },
-        { text: 'London', isCorrect: false },
-        { text: 'Berlin', isCorrect: false },
-        { text: 'Madrid', isCorrect: false }
-      ]
-    },
-    {
-      question: 'What is 2 + 2?',
-      answers: [
-        { text: '3', isCorrect: false },
-        { text: '4', isCorrect: true },
-        { text: '5', isCorrect: false },
-        { text: '6', isCorrect: false }
-      ]
-    },
-    {
-      question: 'What is the chemical symbol for water?',
-      answers: [
-        { text: 'H₂O', isCorrect: true },
-        { text: 'O₂', isCorrect: false },
-        { text: 'CO₂', isCorrect: false },
-        { text: 'H₂O₂', isCorrect: false }
-      ]
-    }
-  ];
+  
 
   let isLoggedIn = (localStorage.getItem('token') != null);
   return (
@@ -47,9 +18,7 @@ function HomePage() {
         <FeatureCard title="Quick Access" description="Access your notes anytime, anywhere." />
         <FeatureCard title="Secure Storage" description="Your notes are stored securely." />
       </section>
-      <div className="p-4 items-center"> 
-        <FlashCardDeck flashcards={myQuestions} />
-      </div>
+      
     </section>
   );
 }
