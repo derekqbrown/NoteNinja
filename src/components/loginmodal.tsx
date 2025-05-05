@@ -35,23 +35,24 @@ const LoginModal: React.FC<LoginModalProps> = ({
           {isRegistering ? 'Register' : 'Login'}
         </h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
+          {isRegistering && (
+            <input
+              type="text"
+              placeholder="Username (Optional)"
+              className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
+            />
+          )}
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Email (Required)"
             className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Password (Required)"
             className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
           />
-          {isRegistering && (
-            <input
-              type="text"
-              placeholder="Optional Username"
-              className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
-            />
-          )}
+          
           <button
             type="submit"
             className="w-full bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400"
