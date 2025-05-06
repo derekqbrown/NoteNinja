@@ -23,7 +23,7 @@ const LoginModal: React.FC<LoginModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-200 bg-opacity-75 flex justify-center items-center z-50">
+    <div className="fixed inset-0 bg-gray-300 bg-opacity-75 flex justify-center items-center z-50">
       <div className="bg-white p-8 rounded shadow-lg w-full max-w-md relative">
         <button
           onClick={onClose}

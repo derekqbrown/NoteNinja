@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import NinjaIcon from '../assets/ninjaicon.svg';
-import HomeIcon from '../assets/homeicon.svg';
-import NoteIcon from '../assets/notesicon.svg';
-import ProfileIcon from '../assets/profileicon.svg';
-import ChatIcon from '../assets/chaticon.svg';
-import LoginIcon from '../assets/loginicon.svg';
-import LogoutIcon from '../assets/logouticon.svg';
+import NinjaIcon from '../assets/icons/ninjaicon.svg';
+import HomeIcon from '../assets/icons/homeicon.svg';
+import NoteIcon from '../assets/icons/notesicon.svg';
+import ProfileIcon from '../assets/icons/profileicon.svg';
+import ChatIcon from '../assets/icons/chaticon.svg';
+import LoginIcon from '../assets/icons/loginicon.svg';
+import LogoutIcon from '../assets/icons/logouticon.svg';
 
 function Navbar({ onAuthClick }) {
   let isLoggedIn = (localStorage.getItem('token') != null);

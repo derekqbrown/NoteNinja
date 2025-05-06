@@ -25,6 +25,24 @@ function NotesPage() {
         ],
       },
       {
+        question: 'What descibes a cat?',
+        answers: [
+          { text: 'angry', isCorrect: false },
+          { text: 'EVIL', isCorrect: true },
+          { text: 'funny', isCorrect: false },
+          { text: 'sour', isCorrect: false },
+        ],
+      },
+      {
+        question: 'What color is green?',
+        answers: [
+          { text: 'crimson', isCorrect: false },
+          { text: 'forest green', isCorrect: true },
+          { text: 'magenta', isCorrect: false },
+          { text: 'navy blue', isCorrect: false },
+        ],
+      },
+      {
         question: 'What is the chemical symbol for water?',
         answers: [
           { text: 'H₂O', isCorrect: true },
