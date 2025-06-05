@@ -18,6 +18,7 @@ const LoginModal: React.FC<LoginModalProps> = ({
     //Modify this when the backend is up and running
     console.log(isRegistering ? 'Registering...' : 'Logging in...');
     setTimeout(() => {
+      localStorage.setItem('token', "TOKEN");
       onAuthSuccess();
     }, 1000);
   };

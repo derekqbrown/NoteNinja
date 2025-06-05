@@ -25,12 +25,12 @@ function NotesPage() {
         ],
       },
       {
-        question: 'What descibes a cat?',
+        question: 'Which best describes a cat?',
         answers: [
-          { text: 'angry', isCorrect: false },
+          { text: 'Happy', isCorrect: false },
           { text: 'EVIL', isCorrect: true },
-          { text: 'funny', isCorrect: false },
-          { text: 'sour', isCorrect: false },
+          { text: 'Courageous', isCorrect: false },
+          { text: 'Red', isCorrect: false },
         ],
       },
       {
