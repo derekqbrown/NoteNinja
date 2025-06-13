@@ -45,12 +45,12 @@ const LoginModal: React.FC<LoginModalProps> = ({
           )}
           <input
             type="email"
-            placeholder="Email (Required)"
+            placeholder="Email (Required)" //John@lolmao.cop
             className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
           />
           <input
             type="password"
-            placeholder="Password (Required)"
+            placeholder="Password (Required)" //lolcat124
             className="w-full px-4 py-2 border rounded focus:ring-indigo-500 focus:border-indigo-500"
           />
           
